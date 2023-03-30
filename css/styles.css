@@ -11,6 +11,9 @@ html {
     top: 0;
     z-index: 9999;
 }
+body{
+    overflow-x: hidden;
+}
 
 header {
     z-index: 9999;
@@ -178,7 +181,7 @@ header {
 /* SECCION DIFERENCIA */
 
 #Diferencia {
-    height: 70vh;
+    height: 90vh;
     scroll-margin-top: 200px;
     width: 100%;
     display: flex;
@@ -264,14 +267,14 @@ header {
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0rem;
     color: var(--azul_oscuro);
 }
 
 .container_tittle p {
-   
     text-align: start;
-    padding: 1rem 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     font-size: 22px;
     font-weight: 300;
 }
@@ -294,6 +297,15 @@ header {
     color: var(--gris_claro);
 }
 /* ----FIN SECCION NOSOTROS!---- */
+
+/* ----SERVICIOS!----- */
+
+#servicios{
+    padding: 2rem 0rem;
+}
+
+
+/*----- FIN SERVICIOS---- */
 
 
 /* MEDIA QUERYS */
@@ -323,6 +335,9 @@ header {
         line-height: 30px;
         text-align: center;
     }
+    .container_tittle h1 {
+        margin-top: 1rem ;
+    }
 
 }
 
@@ -345,13 +360,9 @@ header {
         font-size: 22px;
         width: 100%;
     }
-    .container_tittle h1{
-        margin: 0;
-        margin-top: 3rem;
-    }
+    
     
     .container_nosotros img {
-    
         width: 95vw;
         height: 200px;
         object-fit: cover;
@@ -438,7 +449,7 @@ header {
     }
 
     .container_tittle h1{
-        font-size: 30px;
+        font-size: 27px;
     }
     .container_tittle p{
         line-height: 20px;
@@ -465,6 +476,11 @@ header {
     .button_principal{
         display: none;
     }   
+    .texto_diferencia h3 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    
 
 }
 
@@ -500,6 +516,7 @@ header {
     .container_tittle p{
         line-height: 20px;
         font-size: 15px;
+        margin: 0;
     }
     
 }
