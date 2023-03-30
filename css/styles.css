@@ -130,24 +130,67 @@ header {
     font-weight: lighter;
 }
 
+.button_principal {
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: var(--azul_oscuro);
+    transition: all 250ms ease-in-out;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: light;
+}
+
+.button_principal:hover {
+    background-color: rgb(23, 23, 174);
+}
+
+.ancla_primaria {
+    text-decoration: none;
+}
+
+.button_secundario {
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: var(--gris_claro);
+    color: var(--azul_oscuro);
+    transition: all 250ms ease-in-out;
+    font-weight: light;
+}
+
+.button_secundario:hover {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.ancla_secundaria {
+    text-decoration: none;
+}
+
+
 
 /* ---- FIN DE CARRUSEL ---- */
 
 /* SECCION DIFERENCIA */
 
-#Diferencia{
+#Diferencia {
     height: 70vh;
+    scroll-margin-top: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5rem 0rem;
-    background: rgb(215,210,210);
-background: linear-gradient(90deg, rgba(215,210,210,1) 0%, rgba(194,194,194,1) 50%, rgba(170,170,170,1) 100%);
+    background: rgb(215, 210, 210);
+    background: linear-gradient(90deg, rgba(215, 210, 210, 1) 0%, rgba(194, 194, 194, 1) 50%, rgba(170, 170, 170, 1) 100%);
 }
 
-.texto_diferencia{
+.texto_diferencia {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,28 +198,195 @@ background: linear-gradient(90deg, rgba(215,210,210,1) 0%, rgba(194,194,194,1) 5
     height: 100%;
     padding-right: 3rem;
 }
-.texto_diferencia h3{
+
+.texto_diferencia h3 {
+    letter-spacing: 5px;
+    font-weight: bolder;
     font-size: 40px;
     text-align: center;
     margin-bottom: 3rem;
+    color: var(--azul_oscuro);
 }
 
-.texto_diferencia p{
+.texto_diferencia p {
     text-align: start;
     padding: 1rem 1.3rem;
     font-size: 22px;
     font-weight: 300;
 }
 
-
-.container_imagen_diferencia img{
+.container_imagen_diferencia img {
     width: 80%;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
 }
 
-/* FIN SECCION DIFERENCIA */
+/* ----FIN SECCION DIFERENCIA----- */
+
+
+
+/* -----SECCION NOSOTROS! ----*/
+
+#nosotros {
+    scroll-margin-top: 170px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_nosotros {
+    padding: 3rem 0rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_nosotros img {
+    width: 100%;
+}
+
+.container_tittle {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.container_tittle h1 {
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--azul_oscuro);
+}
+
+.container_tittle p {
+   
+    text-align: start;
+    padding: 1rem 1.3rem;
+    font-size: 19px;
+    font-weight: 300;
+}
+.button_servicios{
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: var(--gris_claro);
+    color: var(--azul_oscuro);
+    transition: all 250ms ease-in-out;
+    font-weight: light;
+    margin: 1rem 0rem;
+}
+.ancla_servicios{
+    text-decoration: none;
+}
+.button_servicios:hover{
+    background-color: var(--azul_oscuro);
+    color: var(--gris_claro);
+}
+/* ----FIN SECCION NOSOTROS!---- */
 
 
 /* MEDIA QUERYS */
+
+@media (max-width:1200px) {
+    .container_nosotros {
+        padding: 3rem 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container_nosotros img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .container_tittle {
+        margin: 0;
+    }
+
+    .container_tittle p {
+        line-height: 30px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:992px) {
+    .carousel-item img {
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        top: 50%;
+    }
+
+    .tittle {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    .text_tittle {
+        font-size: 22px;
+        width: 100%;
+    }
+    .container_tittle h1{
+        margin: 0;
+        margin-top: 3rem;
+    }
+    .container_tittle p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .container_nosotros img {
+    
+        width: 95vw;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #Diferencia {
+        flex-direction: column;
+    }
+
+    .text_tittle {
+        font-size: 25px;
+    }
+
+    .texto_diferencia {
+        width: 90%;
+        padding-right: 0rem;
+    }
+
+    .texto_diferencia h3 {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    .texto_diferencia p {
+        padding: 0;
+    }
+
+    .container_imagen_diferencia img {
+        width: 95vw;
+        height: 250px;
+        object-fit: cover;
+    }
+}
 
 @media screen and (max-width:750px) {
 
@@ -230,49 +440,11 @@ background: linear-gradient(90deg, rgba(215,210,210,1) 0%, rgba(194,194,194,1) 5
         justify-content: space-between;
     }
 
-    
-}
-
-@media (max-width:992px) {
-    .carousel-item img {
-        height: 65vh;
-        object-fit: cover;
-    }
-
-    .carousel-caption {
-        top: 50%;
-    }
-
-    .tittle {
-        font-size: 45px;
-        font-weight: bolder;
-    }
-
-    .text_tittle {
-        font-size: 22px;
-        width: 100%;
-    }
-
-    #Diferencia{
-    flex-direction: column;
-    }
-    .text_tittle {
-        font-size: 25px;
-    }
-
-    .texto_diferencia{
-        width: 90%;
-        padding-right: 0rem;
-    }
-    .texto_diferencia h3{
+    .container_tittle h1{
         font-size: 30px;
-        margin-bottom: 1rem;
     }
-    .container_imagen_diferencia img{
-        width: 95vw;
-        height: 250px;
-        object-fit: cover;
-    }
+
+
 }
 
 @media (max-width:650px) {
@@ -285,15 +457,18 @@ background: linear-gradient(90deg, rgba(215,210,210,1) 0%, rgba(194,194,194,1) 5
         font-size: 40px;
         font-weight: bolder;
     }
-    
-    .texto_diferencia p{
+
+    .texto_diferencia p {
         font-size: 17px;
         line-height: 22px;
     }
-    
+    .button_principal{
+        display: none;
+    }   
+
 }
 
-@media (max-width:450px) {
+@media (max-width:470px) {
     .carousel-caption {
 
         top: 45%;
@@ -314,12 +489,15 @@ background: linear-gradient(90deg, rgba(215,210,210,1) 0%, rgba(194,194,194,1) 5
         font-size: 19px;
         margin-top: 1rem;
     }
-    .texto_diferencia h3{
+
+    .texto_diferencia h3 {
         margin-bottom: 0;
     }
-    .texto_diferencia p{
+
+    .texto_diferencia p {
         font-size: 15px;
     }
+    
 }
 
 /* FIN DE MEDIA QUERYS */
