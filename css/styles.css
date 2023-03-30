@@ -272,7 +272,7 @@ header {
    
     text-align: start;
     padding: 1rem 1.3rem;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 300;
 }
 .button_servicios{
@@ -349,10 +349,7 @@ header {
         margin: 0;
         margin-top: 3rem;
     }
-    .container_tittle p{
-        line-height: 20px;
-        font-size: 15px;
-    }
+    
     .container_nosotros img {
     
         width: 95vw;
@@ -443,7 +440,10 @@ header {
     .container_tittle h1{
         font-size: 30px;
     }
-
+    .container_tittle p{
+        line-height: 20px;
+        font-size: 18px;
+    }
 
 }
 
@@ -495,6 +495,10 @@ header {
     }
 
     .texto_diferencia p {
+        font-size: 15px;
+    }
+    .container_tittle p{
+        line-height: 20px;
         font-size: 15px;
     }
     
