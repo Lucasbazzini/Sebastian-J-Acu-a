@@ -11,7 +11,8 @@ html {
     top: 0;
     z-index: 9999;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -102,7 +103,6 @@ header {
 
 .carousel-item img {
     width: 100%;
-
     height: 89.8vh;
     object-fit: cover;
 }
@@ -233,7 +233,7 @@ header {
 /* -----SECCION NOSOTROS! ----*/
 
 #nosotros {
-    scroll-margin-top: 170px;
+    scroll-margin-top: 150px;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -278,7 +278,8 @@ header {
     font-size: 22px;
     font-weight: 300;
 }
-.button_servicios{
+
+.button_servicios {
     border: none;
     width: 10rem;
     height: 3rem;
@@ -289,20 +290,72 @@ header {
     font-weight: light;
     margin: 1rem 0rem;
 }
-.ancla_servicios{
+
+.ancla_servicios {
     text-decoration: none;
 }
-.button_servicios:hover{
+
+.button_servicios:hover {
     background-color: var(--azul_oscuro);
     color: var(--gris_claro);
 }
+
 /* ----FIN SECCION NOSOTROS!---- */
 
 /* ----SERVICIOS!----- */
 
-#servicios{
+#servicios {
     padding: 2rem 0rem;
+    scroll-margin-top: 150px;
 }
+.row {
+    margin: 0;
+    padding: 0;
+}
+.servicios h4 {
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    color: var(--azul_oscuro);
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 33vh;
+    
+}
+
+.imagen_servicios {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_servicios img {
+    width: 70px;
+}
+
+.texto_servicios {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto_servicios h5{
+    height: 50%;
+}
+.texto_servicios p{
+    height: 50%;    
+}
+
+
 
 
 /*----- FIN SERVICIOS---- */
@@ -321,10 +374,9 @@ header {
     }
 
     .container_nosotros img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
+        width: 60vw;
+    height: 300px;
+    object-fit: cover;
     }
 
     .container_tittle {
@@ -334,9 +386,11 @@ header {
     .container_tittle p {
         line-height: 30px;
         text-align: center;
+        margin: 1rem 0;
     }
+
     .container_tittle h1 {
-        margin-top: 1rem ;
+        margin-top: 1rem;
     }
 
 }
@@ -360,12 +414,13 @@ header {
         font-size: 22px;
         width: 100%;
     }
-    
-    
+
+
     .container_nosotros img {
-        width: 95vw;
+        width: 70vw;
         height: 200px;
         object-fit: cover;
+        
     }
 
     #Diferencia {
@@ -385,6 +440,7 @@ header {
         font-size: 25px;
         margin-bottom: 1rem;
     }
+
     .texto_diferencia p {
         padding: 0;
     }
@@ -448,11 +504,12 @@ header {
         justify-content: space-between;
     }
 
-    .container_tittle h1{
+    .container_tittle h1 {
         font-size: 27px;
     }
-    .container_tittle p{
-        line-height: 20px;
+
+    .container_tittle p {
+        line-height: 25px;
         font-size: 18px;
     }
 
@@ -460,7 +517,7 @@ header {
 
 @media (max-width:650px) {
     .carousel-item img {
-        height: 55vh;
+        height: 65vh;
         object-fit: cover;
     }
 
@@ -473,14 +530,19 @@ header {
         font-size: 17px;
         line-height: 22px;
     }
-    .button_principal{
+
+    .button_principal {
         display: none;
-    }   
+    }
+
     .texto_diferencia h3 {
         font-size: 25px;
         margin-bottom: 1rem;
     }
-    
+    .columna {
+        margin-top: 100px;
+    }
+
 
 }
 
@@ -492,7 +554,7 @@ header {
     }
 
     .carousel-item img {
-        height: 45vh;
+        height: 55vh;
         object-fit: cover;
     }
 
@@ -507,18 +569,60 @@ header {
     }
 
     .texto_diferencia h3 {
-        margin-bottom: 0;
+        margin: 2rem 0rem;
+    font-size: 35px;
     }
 
     .texto_diferencia p {
-        font-size: 15px;
+        font-size: 20px;
+    line-height: 25px;
     }
-    .container_tittle p{
-        line-height: 20px;
+
+    .container_tittle p {
+        line-height: 24px;
         font-size: 15px;
         margin: 0;
     }
-    
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .columna {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 33vh;
+    }
+
+    .imagen_servicios {
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .imagen_servicios img {
+        width: 70px;
+    }
+
+    .texto_servicios {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicios h4 {
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        color: var(--azul_oscuro);
+    }
+
 }
 
 /* FIN DE MEDIA QUERYS */
