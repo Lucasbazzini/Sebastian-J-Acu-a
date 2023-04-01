@@ -326,7 +326,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 33vh;
-    
+
 }
 
 .imagen_servicios {
@@ -459,7 +459,6 @@ header {
         display: block;
         border: 0;
         font-size: 1.75rem;
-        background-color: transparent;
         cursor: pointer;
     }
 
