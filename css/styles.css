@@ -190,8 +190,19 @@ header {
     justify-content: center;
     align-items: center;
     padding: 5rem 0rem;
-    background: rgb(215, 210, 210);
-    background: linear-gradient(90deg, rgba(215, 210, 210, 1) 0%, rgba(194, 194, 194, 1) 50%, rgba(170, 170, 170, 1) 100%);
+    background-image: linear-gradient(
+  0deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(344deg 0% 99%) 11%,
+  hsl(344deg 0% 97%) 22%,
+  hsl(344deg 0% 96%) 33%,
+  hsl(344deg 0% 94%) 44%,
+  hsl(344deg 0% 93%) 56%,
+  hsl(344deg 0% 91%) 67%,
+  hsl(344deg 0% 90%) 78%,
+  hsl(344deg 0% 88%) 89%,
+  hsl(0deg 0% 87%) 100%
+);
 }
 
 .texto_diferencia {
@@ -203,7 +214,7 @@ header {
     padding-right: 3rem;
 }
 
-.texto_diferencia h3 {
+.texto_diferencia h4 {
     letter-spacing: 5px;
     font-weight: bolder;
     font-size: 40px;
@@ -217,7 +228,8 @@ header {
     font-size: 22px;
     font-weight: 300;
 }
-.container_imagen_diferencia{
+
+.container_imagen_diferencia {
     height: 450px;
     display: flex;
     align-items: center;
@@ -241,10 +253,10 @@ header {
 
 #nosotros {
     scroll-margin-top: 150px;
-    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--gris_claro);
 }
 
 .container_nosotros {
@@ -254,6 +266,7 @@ header {
     flex-wrap: row;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .container_nosotros img {
@@ -291,8 +304,8 @@ header {
     width: 10rem;
     height: 3rem;
     border-radius: 25px;
-    background-color: var(--gris_claro);
-    color: var(--azul_oscuro);
+    background-color: var(--azul_oscuro);
+    color: var(--gris_claro);
     transition: all 250ms ease-in-out;
     font-weight: light;
     margin: 1rem 0rem;
@@ -303,8 +316,8 @@ header {
 }
 
 .button_servicios:hover {
-    background-color: var(--azul_oscuro);
-    color: var(--gris_claro);
+    background-color: var(--gris_oscuro);
+    color: var(--azul_claro);
 }
 
 /* ----FIN SECCION NOSOTROS!---- */
@@ -312,7 +325,20 @@ header {
 /* ----SERVICIOS!----- */
 
 #servicios {
-    margin: 80px 0px;
+    background-image: linear-gradient(
+  180deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(344deg 0% 99%) 11%,
+  hsl(344deg 0% 97%) 22%,
+  hsl(344deg 0% 96%) 33%,
+  hsl(344deg 0% 94%) 44%,
+  hsl(344deg 0% 93%) 56%,
+  hsl(344deg 0% 91%) 67%,
+  hsl(344deg 0% 90%) 78%,
+  hsl(344deg 0% 88%) 89%,
+  hsl(0deg 0% 87%) 100%
+);
+    margin-top: 80px ;
     padding: 2rem 0rem;
     scroll-margin-top: 150px;
 }
@@ -336,11 +362,10 @@ header {
     justify-content: center;
     align-items: center;
     height: 33vh;
-
 }
 
 .imagen_servicios {
-    
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -358,15 +383,18 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .texto_servicios h5 {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .texto_servicios p {
     height: 50%;
 }
+
 .imagen_servicios_main {
     height: 100px;
     display: flex;
@@ -377,17 +405,20 @@ header {
 .imagen_servicios_main img {
     width: 70px;
 }
-.texto_servicios_main{
+
+.texto_servicios_main {
     padding: 0 100px;
     height: 100%;
 }
-.texto_servicios_main h5{
+
+.texto_servicios_main h5 {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.texto_servicios_main p{
+
+.texto_servicios_main p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,30 +441,156 @@ header {
     background-color: var(--gris_claro);
     color: var(--azul_oscuro);
 }
-.section_servicios_all{
+
+.section_servicios_all {
     margin: 100px 0px;
 }
-h5{
+
+h5 {
     font-weight: 600;
 }
-.divisor{
+
+.divisor {
     height: 160px;
- }
- .columna_main{
+}
+
+.columna_main {
     margin-top: 40px;
     margin-bottom: 70px;
- }
- .row_main{
+}
+
+.row_main {
     margin: 20px 0px;
- }
+}
 
 /*----- FIN SERVICIOS---- */
+
+/* MASCOTAS */
+#mascotas{
+    scroll-margin-top: 150px;
+    background-image: linear-gradient( 0deg, hsl(0deg 0% 100%) 0%, hsl(344deg 0% 99%) 11%, hsl(344deg 0% 97%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 95%) 44%, hsl(344deg 0% 93%) 56%, hsl(344deg 0% 92%) 67%, hsl(344deg 0% 90%) 78%, hsl(344deg 0% 89%) 89%,hsl(0deg 0% 88%) 100%); 
+    min-height: 60vh;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px; 
+}
+
+.imagen_mascotas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen_mascotas img{
+    max-width: 100%;
+    min-height: 100%;
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    border-radius: 5px;
+}
+.texto_mascotas{
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 550px;
+    text-align: center;
+}
+.texto_mascotas h4{
+    font-weight: 600;
+}
+.texto_mascotas p{
+    font-weight: 300;
+    font-size: 18px;
+}
+.texto_mascotas button{
+    border-radius: 30px;
+    padding: 13px 35px;
+    border: none;
+    background-color: var(--azul_oscuro);
+    color: var(--gris_claro);
+    transition: all 250ms ease-in-out;
+}
+.texto_mascotas button:hover{
+    background-color: var(--gris_claro);
+    color: var(--azul_oscuro);
+}
+
+/* FIN DE MASCOTAS */
+
+
+/* MUDANZAS */
+#mudanzas{
+    background-image: linear-gradient(
+  180deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(344deg 0% 99%) 11%,
+  hsl(344deg 0% 97%) 22%,
+  hsl(344deg 0% 96%) 33%,
+  hsl(344deg 0% 94%) 44%,
+  hsl(344deg 0% 93%) 56%,
+  hsl(344deg 0% 91%) 67%,
+  hsl(344deg 0% 90%) 78%,
+  hsl(344deg 0% 88%) 89%,
+  hsl(0deg 0% 87%) 100%
+);
+    background-color: blue;
+    scroll-margin-top: 150px;
+    min-height: 60vh;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.imagen_mudanzas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen_mudanzas img{
+    max-width: 100%;
+    min-height: 100%;
+    -webkit-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
+    border-radius: 5px;
+}
+.texto_mudanzas{
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 550px;
+    text-align: center;
+}
+.texto_mudanzas h4{
+    font-weight: 600;
+}
+.texto_mudanzas p{
+    font-weight: 300;
+    font-size: 18px;
+}
+.texto_mudanzas button{
+    border-radius: 30px;
+    padding: 13px 35px;
+    border: none;
+    background-color: var(--azul_oscuro);
+    color: var(--gris_claro);
+    transition: all 250ms ease-in-out;
+}
+.texto_mudanzas button:hover{
+    background-color: var(--gris_claro);
+    color: var(--azul_oscuro);
+}
+/* FIN DE MUDANZAS */
 
 
 /* MEDIA QUERYS */
 
 @media (max-width:1200px) {
-
     .container_nosotros {
         padding: 3rem 0rem;
         width: 100%;
@@ -462,16 +619,19 @@ h5{
     .container_tittle h1 {
         margin-top: 1rem;
     }
-    .texto_diferencia h3 {
+
+    .texto_diferencia h4 {
         font-size: 30px;
     }
-    .texto_diferencia p{
+
+    .texto_diferencia p {
         font-size: 20px;
     }
-    .texto_servicios_main{
+
+    .texto_servicios_main {
         padding: 0px;
     }
-    
+
 
 }
 
@@ -499,9 +659,6 @@ h5{
         width: 100%;
     }
 
-    #nosotros {
-        margin-top: 100px;
-    }
     .container_nosotros img {
         width: 70vw;
         min-height: 200px;
@@ -523,7 +680,7 @@ h5{
         padding-right: 0rem;
     }
 
-    .texto_diferencia h3 {
+    .texto_diferencia h4 {
         font-size: 25px;
     }
 
@@ -536,6 +693,8 @@ h5{
         height: 250px;
         object-fit: cover;
     }
+
+
 }
 
 @media screen and (max-width:750px) {
@@ -597,10 +756,6 @@ h5{
         line-height: 25px;
         font-size: 18px;
     }
-    #nosotros {
-        margin-top: 100px;
-    }
-
 }
 
 @media (max-width:650px) {
@@ -613,9 +768,11 @@ h5{
         font-size: 40px;
         font-weight: bolder;
     }
-    .texto_diferencia{
+
+    .texto_diferencia {
         margin: 0;
     }
+
     .texto_diferencia p {
         font-size: 17px;
         line-height: 22px;
@@ -625,10 +782,11 @@ h5{
         display: none;
     }
 
-    .texto_diferencia h3 {
+    .texto_diferencia h4 {
         font-size: 25px;
         margin-bottom: 1rem;
     }
+
     #nosotros {
         margin-top: 0px;
     }
@@ -671,11 +829,13 @@ h5{
         font-size: 15px;
         margin: 0;
     }
+
     .container_nosotros img {
         width: 80vw;
         min-height: 200px;
         object-fit: cover;
     }
+
     .columna {
         display: flex;
         flex-direction: column;
