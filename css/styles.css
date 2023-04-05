@@ -3,7 +3,7 @@
     --azul_claro: #003e9b;
     --gris_claro: #d7d2d2;
     --gris_oscuro: #838F95;
-  }
+}
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -33,6 +33,36 @@ header {
     padding: 1rem;
     background-color: rgb(243, 243, 243);
 }
+
+.loader-pulse {
+    
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #4444fd;
+    animation: load-pulse 1.2s infinite linear;
+  }
+  
+  @keyframes load-pulse {
+    0% {
+      transform: scale(0.15);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
 
 .logo {
     width: 64.18px;
@@ -198,19 +228,17 @@ header {
     justify-content: center;
     align-items: center;
     padding: 5rem 0rem;
-    background-image: linear-gradient(
-  0deg,
-  hsl(0deg 0% 100%) 0%,
-  hsl(344deg 0% 99%) 11%,
-  hsl(344deg 0% 97%) 22%,
-  hsl(344deg 0% 96%) 33%,
-  hsl(344deg 0% 94%) 44%,
-  hsl(344deg 0% 93%) 56%,
-  hsl(344deg 0% 91%) 67%,
-  hsl(344deg 0% 90%) 78%,
-  hsl(344deg 0% 88%) 89%,
-  hsl(0deg 0% 87%) 100%
-);
+    background-image: linear-gradient(0deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(344deg 0% 99%) 11%,
+            hsl(344deg 0% 97%) 22%,
+            hsl(344deg 0% 96%) 33%,
+            hsl(344deg 0% 94%) 44%,
+            hsl(344deg 0% 93%) 56%,
+            hsl(344deg 0% 91%) 67%,
+            hsl(344deg 0% 90%) 78%,
+            hsl(344deg 0% 88%) 89%,
+            hsl(0deg 0% 87%) 100%);
 }
 
 .texto_diferencia {
@@ -331,20 +359,18 @@ header {
 /* ----SERVICIOS!----- */
 
 #servicios {
-    background-image: linear-gradient(
-  180deg,
-  hsl(0deg 0% 100%) 0%,
-  hsl(344deg 0% 99%) 11%,
-  hsl(344deg 0% 97%) 22%,
-  hsl(344deg 0% 96%) 33%,
-  hsl(344deg 0% 94%) 44%,
-  hsl(344deg 0% 93%) 56%,
-  hsl(344deg 0% 91%) 67%,
-  hsl(344deg 0% 90%) 78%,
-  hsl(344deg 0% 88%) 89%,
-  hsl(0deg 0% 87%) 100%
-);
-    margin-top: 80px ;
+    background-image: linear-gradient(180deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(344deg 0% 99%) 11%,
+            hsl(344deg 0% 97%) 22%,
+            hsl(344deg 0% 96%) 33%,
+            hsl(344deg 0% 94%) 44%,
+            hsl(344deg 0% 93%) 56%,
+            hsl(344deg 0% 91%) 67%,
+            hsl(344deg 0% 90%) 78%,
+            hsl(344deg 0% 88%) 89%,
+            hsl(0deg 0% 87%) 100%);
+    margin-top: 80px;
     padding: 2rem 0rem;
     scroll-margin-top: 150px;
 }
@@ -473,28 +499,30 @@ h5 {
 /*----- FIN SERVICIOS---- */
 
 /* MASCOTAS */
-#mascotas{
+#mascotas {
     scroll-margin-top: 160px;
-    background-image: linear-gradient( 0deg, hsl(0deg 0% 100%) 0%, hsl(344deg 0% 99%) 11%, hsl(344deg 0% 97%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 95%) 44%, hsl(344deg 0% 93%) 56%, hsl(344deg 0% 92%) 67%, hsl(344deg 0% 90%) 78%, hsl(344deg 0% 89%) 89%,hsl(0deg 0% 88%) 100%); 
+    background-image: linear-gradient(0deg, hsl(0deg 0% 100%) 0%, hsl(344deg 0% 99%) 11%, hsl(344deg 0% 97%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 95%) 44%, hsl(344deg 0% 93%) 56%, hsl(344deg 0% 92%) 67%, hsl(344deg 0% 90%) 78%, hsl(344deg 0% 89%) 89%, hsl(0deg 0% 88%) 100%);
     min-height: 60vh;
-    display:flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px; 
+    padding: 50px 0px;
 }
 
-.imagen_operador{
+.imagen_operador {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagen_operador img{
+
+.imagen_operador img {
     max-width: 100%;
     min-height: 100%;
     box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
     border-radius: 5px;
 }
-.texto_mascotas{
+
+.texto_mascotas {
     line-height: 28px;
     display: flex;
     flex-direction: column;
@@ -503,15 +531,18 @@ h5 {
     min-height: 550px;
     text-align: center;
 }
-.texto_mascotas h4{
-     color: var(--azul_oscuro);
+
+.texto_mascotas h4 {
+    color: var(--azul_oscuro);
     font-weight: 600;
 }
-.texto_mascotas p{
+
+.texto_mascotas p {
     font-weight: 300;
     font-size: 18px;
 }
-.texto_mascotas button{
+
+.texto_mascotas button {
     border-radius: 30px;
     padding: 13px 35px;
     border: none;
@@ -519,7 +550,8 @@ h5 {
     color: var(--gris_claro);
     transition: all 250ms ease-in-out;
 }
-.texto_mascotas button:hover{
+
+.texto_mascotas button:hover {
     background-color: var(--gris_claro);
     color: var(--azul_oscuro);
 }
@@ -528,40 +560,41 @@ h5 {
 
 
 /* MUDANZAS */
-#mudanzas{
-    background-image: linear-gradient(
-  180deg,
-  hsl(0deg 0% 100%) 0%,
-  hsl(344deg 0% 99%) 11%,
-  hsl(344deg 0% 97%) 22%,
-  hsl(344deg 0% 96%) 33%,
-  hsl(344deg 0% 94%) 44%,
-  hsl(344deg 0% 93%) 56%,
-  hsl(344deg 0% 91%) 67%,
-  hsl(344deg 0% 90%) 78%,
-  hsl(344deg 0% 88%) 89%,
-  hsl(0deg 0% 87%) 100%
-);
+#mudanzas {
+    background-image: linear-gradient(180deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(344deg 0% 99%) 11%,
+            hsl(344deg 0% 97%) 22%,
+            hsl(344deg 0% 96%) 33%,
+            hsl(344deg 0% 94%) 44%,
+            hsl(344deg 0% 93%) 56%,
+            hsl(344deg 0% 91%) 67%,
+            hsl(344deg 0% 90%) 78%,
+            hsl(344deg 0% 88%) 89%,
+            hsl(0deg 0% 87%) 100%);
     background-color: blue;
     scroll-margin-top: 150px;
     min-height: 60vh;
-    display:flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 0px;
 }
-.imagen_mudanzas{
+
+.imagen_mudanzas {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagen_mudanzas img{
+
+.imagen_mudanzas img {
     min-width: 100%;
     min-height: 100%;
     box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
     border-radius: 5px;
 }
-.texto_mudanzas{
+
+.texto_mudanzas {
     line-height: 28px;
     display: flex;
     flex-direction: column;
@@ -570,15 +603,18 @@ h5 {
     min-height: 550px;
     text-align: center;
 }
-.texto_mudanzas h4{
+
+.texto_mudanzas h4 {
     color: var(--azul_oscuro);
     font-weight: 600;
 }
-.texto_mudanzas p{
+
+.texto_mudanzas p {
     font-weight: 300;
     font-size: 18px;
 }
-.texto_mudanzas button{
+
+.texto_mudanzas button {
     border-radius: 30px;
     padding: 13px 35px;
     border: none;
@@ -586,14 +622,16 @@ h5 {
     color: var(--gris_claro);
     transition: all 250ms ease-in-out;
 }
-.texto_mudanzas button:hover{
+
+.texto_mudanzas button:hover {
     background-color: var(--gris_claro);
     color: var(--azul_oscuro);
 }
+
 /* FIN DE MUDANZAS */
 
 /* CONTACTO */
-#contacto{
+#contacto {
     scroll-margin-top: 80px;
     justify-content: center;
     align-items: center;
@@ -601,59 +639,69 @@ h5 {
     min-height: 33vh;
     background-color: var(--gris_claro);
 }
-.container_icons{
+
+.container_icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.container_icons p{
+
+.container_icons p {
     font-size: 35px;
     font-weight: 300;
 }
-.columna_icons{
+
+.columna_icons {
     display: flex;
     gap: 70px;
 }
-.bg-icon{
+
+.bg-icon {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     transition: all 150ms ease-in-out;
 }
-.bg-icon a{
+
+.bg-icon a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
     text-decoration: none;
 }
-.bg-icon img{
+
+.bg-icon img {
     width: 40px;
     margin-bottom: 10px;
 }
-.bg-icon span{
+
+.bg-icon span {
     color: black;
 }
-.bg-icon:hover{
+
+.bg-icon:hover {
     transform: scale(1.04);
 }
+
 /* FIN DE CONTACTO */
 
 /* FOOTER */
-footer{
+footer {
     background-color: rgb(71, 71, 71);
     padding: 5rem 0rem;
 }
 
-.seccion_links{
+.seccion_links {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.soporte{
+
+.soporte {
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -664,37 +712,43 @@ footer{
     gap: 10px;
     margin: 0rem 5rem;
 }
-.footer_list{
+
+.footer_list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
-.footer_list li{
+
+.footer_list li {
     list-style: none;
-    
+
 }
-.footer_list li a{
+
+.footer_list li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 20px;   
+    font-size: 20px;
     transition: all 250ms ease-in-out;
 }
-.footer_list li a:hover{
+
+.footer_list li a:hover {
     color: rgb(103, 164, 255);
 }
-.seccion_mapa{
+
+.seccion_mapa {
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.seccion_mapa iframe{
+.seccion_mapa iframe {
     border-radius: 10px;
     width: 400px;
     height: 400px;
 }
+
 /* FIN DE FOOTER */
 
 /* MEDIA QUERYS */
@@ -740,10 +794,12 @@ footer{
     .texto_servicios_main {
         padding: 0px;
     }
-    #mascotas{
-        scroll-margin-top: 120px; 
+
+    #mascotas {
+        scroll-margin-top: 120px;
     }
-    #mudanzas{
+
+    #mudanzas {
         scroll-margin-top: 50px;
     }
 }
@@ -806,10 +862,12 @@ footer{
         height: 250px;
         object-fit: cover;
     }
-    .seccion_links{
+
+    .seccion_links {
         flex-direction: column;
     }
-    .soporte{
+
+    .soporte {
         margin: 3rem 0rem;
     }
 }
@@ -873,7 +931,7 @@ footer{
         line-height: 25px;
         font-size: 18px;
     }
-    
+
 }
 
 @media (max-width:650px) {
@@ -909,12 +967,13 @@ footer{
         margin-top: 0px;
     }
 
-    .columna_icons{
+    .columna_icons {
         flex-direction: column;
         display: flex;
         gap: 12px;
     }
-    .button_secundario{
+
+    .button_secundario {
         margin-top: 15px;
     }
 }
@@ -977,6 +1036,7 @@ footer{
         width: 100%;
 
     }
+
     .texto_servicios {
         height: 25%;
         display: flex;
@@ -996,12 +1056,15 @@ footer{
     .columna_main {
         margin: 30px 0;
     }
-    .imagen_operador img{
+
+    .imagen_operador img {
         content: url(../assets/images/operador_aduana_s.webp);
     }
-    .imagen_mudanzas img{
+
+    .imagen_mudanzas img {
         content: url(../assets/images/montacarga.webp);
     }
+
     .container_imagen_diferencia img {
         content: url(../assets/images/manos_s.webp);
     }
