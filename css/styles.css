@@ -483,12 +483,12 @@ h5 {
     padding: 50px 0px; 
 }
 
-.imagen_mascotas{
+.imagen_operador{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagen_mascotas img{
+.imagen_operador img{
     max-width: 100%;
     min-height: 100%;
     box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
@@ -914,11 +914,13 @@ footer{
         display: flex;
         gap: 12px;
     }
+    .button_secundario{
+        margin-top: 15px;
+    }
 }
 
 @media (max-width:470px) {
     .carousel-caption {
-
         top: 45%;
         width: 80%;
     }
@@ -955,7 +957,7 @@ footer{
     }
 
     .container_nosotros img {
-        content: url('../assets/images/sebas_s.jpg');
+        content: url('../assets/images/sebas_s.webp');
         width: 80vw;
         min-height: 200px;
         object-fit: cover;
@@ -994,14 +996,14 @@ footer{
     .columna_main {
         margin: 30px 0;
     }
-    .imagen_mascotas img{
-        content: url(../assets/images/mascotas_juntas_s.jpg);
+    .imagen_operador img{
+        content: url(../assets/images/operador_aduana_s.webp);
     }
     .imagen_mudanzas img{
-        content: url(../assets/images/familia_mudanza_s.jpg);
+        content: url(../assets/images/montacarga.webp);
     }
     .container_imagen_diferencia img {
-        content: url(../assets/images/manos_s.jpg);
+        content: url(../assets/images/manos_s.webp);
     }
 }
 
