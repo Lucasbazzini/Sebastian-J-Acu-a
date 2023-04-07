@@ -305,6 +305,7 @@ header {
 
 .container_nosotros img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .container_tittle {
@@ -696,7 +697,7 @@ h5 {
 
 footer{
     padding: 5rem 0rem;
-    background-color: var(--azul_claro);
+    background-color: var(--azul_oscuro);
 }
 .seccion_links{
     display: flex;
