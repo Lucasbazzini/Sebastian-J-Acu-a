@@ -35,7 +35,7 @@ header {
 }
 
 .loader-pulse {
-    
+
     position: fixed;
   top: 50%;
   left: 50%;
@@ -47,17 +47,17 @@ header {
     background: #4444fd;
     animation: load-pulse 1.2s infinite linear;
   }
-  
+
   @keyframes load-pulse {
     0% {
       transform: scale(0.15);
       opacity: 0;
     }
-  
+
     50% {
       opacity: 1;
     }
-  
+
     100% {
       transform: scale(1);
       opacity: 0;
@@ -458,6 +458,9 @@ header {
     height: 100px;
 }
 
+.button_servicios_main{
+    margin: 20px 0px;
+}
 
 .button_servicios_main button {
     background-color: var(--azul_oscuro);
@@ -509,13 +512,13 @@ h5 {
     padding: 50px 0px;
 }
 
-.imagen_operador {
+.imagen_mascotas {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.imagen_operador img {
+.imagen_mascotas img {
     max-width: 100%;
     min-height: 100%;
     box-shadow: 0px 0px 24px -12px rgba(66, 68, 90, 1);
@@ -690,63 +693,64 @@ h5 {
 /* FIN DE CONTACTO */
 
 /* FOOTER */
-footer {
-    background-color: rgb(71, 71, 71);
+
+footer{
     padding: 5rem 0rem;
+    background-color: var(--azul_claro);
 }
-
-.seccion_links {
+.seccion_links{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.soporte {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    color: white;
     text-align: center;
-    font-size: larger;
-    gap: 10px;
-    margin: 0rem 5rem;
 }
-
-.footer_list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer_list li {
+.seccion_links ul{
+    
     list-style: none;
-
+    padding: 0;
 }
-
-.footer_list li a {
-    color: rgb(255, 255, 255);
+.seccion_links ul li{
+    margin: 15px 0px;
+}
+.seccion_links ul li a{
+   text-decoration: none;
+   color: white;
+   transition: all 250ms ease-in-out;
+}
+.seccion_links ul li a:hover{
     text-decoration: none;
-    font-size: 20px;
-    transition: all 250ms ease-in-out;
-}
+    color: var(--gris_oscuro);
+ }
 
-.footer_list li a:hover {
-    color: rgb(103, 164, 255);
+.seccion_soporte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
-.seccion_mapa {
+.seccion_soporte ul{
+    
+    list-style: none;
+    padding: 0;
+}
+.seccion_soporte ul li{
+    margin: 15px 0px;
+}
+.seccion_soporte ul li p{
+   text-decoration: none;
+   color: white;
+}
+.container_direccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.direccion{
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-}
-
-.seccion_mapa iframe {
-    border-radius: 10px;
-    width: 400px;
-    height: 400px;
+    text-align: center;
+    color: white;
 }
 
 /* FIN DE FOOTER */
@@ -863,13 +867,7 @@ footer {
         object-fit: cover;
     }
 
-    .seccion_links {
-        flex-direction: column;
-    }
-
-    .soporte {
-        margin: 3rem 0rem;
-    }
+    
 }
 
 @media screen and (max-width:750px) {
@@ -1057,13 +1055,13 @@ footer {
         margin: 30px 0;
     }
 
-    .imagen_operador img {
-        content: url(../assets/images/operador_aduana_s.webp);
+    .imagen_mascotas img {
+        content: url(../assets/images/mascotas_s.webp);
     }
 
-    .imagen_mudanzas img {
-        content: url(../assets/images/montacarga.webp);
-    }
+   .imagen_mudanzas img {
+        content: url(../assets/images/mudanzas_s.webp);
+    } 
 
     .container_imagen_diferencia img {
         content: url(../assets/images/manos_s.webp);
