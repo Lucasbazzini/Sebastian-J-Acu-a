@@ -5,6 +5,13 @@
     --gris_oscuro: #838F95;
 }
 
+.animate__fadeInLeft{
+    --animate-duration: 1.8s;
+}
+.animate__fadeInRight{
+    --animate-duration : 1.3s
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -697,7 +704,7 @@ h5 {
 
 footer{
     padding: 5rem 0rem;
-    background-color: var(--azul_oscuro);
+    background-color: rgb(0, 0, 56);
 }
 .seccion_links{
     display: flex;

@@ -17,8 +17,11 @@
     <!-- <meta property="og:url" content="https://tu-sitio.com"> -->
     <meta property="og:type" content="website">
 
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +48,7 @@
     <!-- FIN DE LOADER -->
 
     <!-- ENCABEZADO -->
-    <header>
+    <header >
         <a href="#">
             <img class="logo" src="./assets/images/logo.webp" alt="Logo" title="Logo de Sebastian J. Acuña">
         </a>
@@ -74,15 +77,15 @@
                         alt="Buque de carga"
                         title="Se muestra un Buque de carga visto desde arriba transportando contenedores">
                     <div class="carousel-caption d-none d-md-block texto_carrusel">
-                        <h2 class="tittle">Estudio <br> Aduanero</h2>
-                        <h3 class="text_tittle">Más de 15 años de experiencia en el comercio exterior.</h3>
-                        <a class="button_carrousel_blue" href="#contacto">
-                            <button class="button_principal">
+                        <h2 class="tittle animate__animated animate__fadeInLeft">Estudio <br> Aduanero</h2>
+                        <h3 class="text_tittle tittle animate__animated animate__fadeInRight">Más de 15 años de experiencia en el comercio exterior.</h3>
+                        <a class="button_carrousel_blue " href="#contacto">
+                            <button class="button_principal animate__animated animate__fadeInUp">
                                 Contacto
                             </button>
                         </a>
                         <a class="button_carrousel_grey" href="#nosotros" rel="nofollow">
-                            <Button class="button_secundario">
+                            <Button class="button_secundario animate__animated animate__fadeInUp">
                                 Ver más
                                 <span>
                                     <i class="bi bi-arrow-down"></i>
@@ -141,15 +144,15 @@
             <!-- NOSOTROS  -->
             <section id="nosotros">
                 <div class="container container_nosotros">
-                    <div class="container_img">
+                    <div class="container_img" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
                         <img src="./assets/images/sebas.webp" alt="Despachante de aduana"
                             title="Se muestra a Sebastian J. Acuña">
                     </div>
                     <div class="container_tittle">
-                        <h1>
+                        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                             Sebastián J. Acuña
                         </h1>
-                        <p>
+                        <p data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                             Estudio Aduanero con más de 15 años de experiencia en el comercio exterior.Asistimos a
                             nuestros
                             clientes en forma integral, acompañándolos desde las instancias previasa una operación de
@@ -160,7 +163,8 @@
                             resultados.Nuestra gestión diaria, está cimentada en la capacitación y actualización
                             permanenteen comercio exterior y operatoria aduanera.
                         </p>
-                        <a class="ancla_servicios" href="#servicios">
+                        <a class="ancla_servicios" href="#servicios" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-once="true">
                             <button class="button_servicios">Servicios</button>
                         </a>
                     </div>
@@ -176,7 +180,8 @@
                     </h4>
                 </div>
                 <div class="row row_main">
-                    <div class="col-lg-6 columna_main">
+                    <div class="col-lg-6 columna_main" data-aos="fade-up" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1000">
                         <div class="imagen_servicios_main">
                             <img src="./assets/images/huella.webp" alt="Mascotas"
                                 title="Logo de importacion y exportación de mascotas">
@@ -199,7 +204,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 columna_main">
+                    <div class="col-lg-6 columna_main " data-aos="fade-up" data-aos-once="true" data-aos-offset="300"
+                        data-aos-duration="1000">
                         <div class="imagen_servicios_main">
                             <img src="./assets/images/house-check.svg" alt="Mudanzas"
                                 title="Logo de Mudanzas internacionales">
@@ -226,7 +232,8 @@
                 </div>
                 <div class="row">
                     <div class="row">
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-right" data-aos-once="true" data-aos-offset="300"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/shield-check.svg" alt="Regimenes aduaneros"
                                     title="Logo de Regimenes aduaneros">
@@ -241,7 +248,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-up" data-aos-once="true" data-aos-offset="270"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/barco-de-carga.webp" alt="Flete Internacional"
                                     title="Logo de Flete internacional">
@@ -255,7 +263,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-left" data-aos-once="true" data-aos-offset="320"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/rocket-takeoff.svg" alt="Pymes"
                                     title="Logo de asistencia a Pymes">
@@ -265,14 +274,16 @@
                                     Pymes
                                 </h5>
                                 <p>
-                                    Asistencia a empresas pymes que desean empezar a importar sus productos. Brindamos asesoramiento integral en las distintas etapas de todo el proceso
+                                    Asistencia a empresas pymes que desean empezar a importar sus productos. Brindamos
+                                    asesoramiento integral en las distintas etapas de todo el proceso
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-right" data-aos-once="true" data-aos-offset="270"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/list-check.svg" alt="Gestion de organismos"
                                     title="Logo de Gestion de organismos">
@@ -287,7 +298,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-up" data-aos-once="true" data-aos-offset="320"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/box-seam.svg" alt="Clasificación arancelaria"
                                     title="Logo de Clasificación arancelaria">
@@ -297,11 +309,13 @@
                                     Clasificación arancelaria
                                 </h5>
                                 <p>
-                                    Clasificación arancelaria de los productos para conocer los requisitos de ingreso/salida de los mismos.
+                                    Clasificación arancelaria de los productos para conocer los requisitos de
+                                    ingreso/salida de los mismos.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 columna">
+                        <div class="col-lg-4 columna" data-aos="fade-left" data-aos-once="true" data-aos-offset="300"
+                            data-aos-duration="1000">
                             <div class="imagen_servicios">
                                 <img src="./assets/images/currency-exchange.svg" alt="Gravámenes y estímulos"
                                     title="Logo de Gravámenes y estímulos">
@@ -323,20 +337,22 @@
 
             <!-- MASCOTAS -->
             <div id="mascotas" class="row">
-                <div class="imagen_mascotas col-lg-6">
+                <div class="imagen_mascotas col-lg-6" data-aos="fade-right" data-aos-duration="1000"
+                    data-aos-once="true">
                     <img src="./assets/images/mascotas.webp" alt="Mascotas juntas"
                         title="Mascotas juntas en una misma imagen">
                 </div>
                 <div class="texto_mascotas col-lg-6">
-                    <h4> Transporte y seguro internacional, de mascotas</h4>
-                    <p>
+                    <h4 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"> Transporte y seguro
+                        internacional, de mascotas</h4>
+                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
                         En nuestro estudio , nos enfocamos en ayudar a importar y exportar mascotas de manera segura y
                         eficiente. Nos aseguramos de cumplir con todos los requisitos de importación y exportación,
                         trabajando con autoridades aduaneras y agentes de transporte para garantizar que su mascota
                         cumpla con todas las regulaciones y requerimientos del país de destino o de origen. Contáctenos
                         hoy mismo para obtener más información.
                     </p>
-                    <a href="#contacto">
+                    <a href="#contacto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                         <button>Contactanos!</button>
                     </a>
                 </div>
@@ -346,15 +362,19 @@
             <!-- MUDANZAS -->
             <div id="mudanzas" class="row">
                 <div class="texto_mudanzas col-lg-6">
-                    <h4> Mudanzas Internacionales</h4>
-                    <p>
-                        Ofrecemos servicio de mudanza personalizado según las necesidades de cada cliente. Nos ocupamos de todo el proceso, desde el embalaje en origen, gestión aduanera y su posterior traslado , hasta la entrega en su nuevo domicilio.
+                    <h4 data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"> Mudanzas Internacionales
+                    </h4>
+                    <p data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                        Ofrecemos servicio de mudanza personalizado según las necesidades de cada cliente. Nos ocupamos
+                        de todo el proceso, desde el embalaje en origen, gestión aduanera y su posterior traslado ,
+                        hasta la entrega en su nuevo domicilio.
                     </p>
-                    <a href="#contacto">
+                    <a href="#contacto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                         <button>Contactanos!</button>
                     </a>
                 </div>
-                <div class="imagen_mudanzas col-lg-6">
+                <div class="imagen_mudanzas col-lg-6" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-once="true">
                     <img style="width: 400px;" src="./assets/images/mudanzas.webp" alt="Camion de mudanzas"
                         title="Operador realizando mudanza">
                 </div>
@@ -371,7 +391,8 @@
                         Nuestra estructura y experiencia nos permiten brindar soluciones a empresas de diferentes
                         sectores. Nos especializamos en atender las operaciones y
                         proyectos de nuestros clientes con eficiencia y calidad en cada una de las áreas en las que nos
-                        desenvolvemos. Contamos con un equipo altamente capacitado y comprometido En lograr el éxito en las operaciones en nuestros clientes.
+                        desenvolvemos. Contamos con un equipo altamente capacitado y comprometido En lograr el éxito en
+                        las operaciones en nuestros clientes.
                     </p>
                 </div>
                 <div class="container_imagen_diferencia">
@@ -386,35 +407,35 @@
 
             <div id="contacto">
                 <div class="container container_icons">
-                    <p>Contactanos:</p>
+                    <p data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">Contactanos:</p>
                     <div class="row">
                         <div class="columna_icons">
                             <div class="bg-icon">
                                 <a href="tel:3515057082" target="_blank">
-                                    <img src="./assets/images/telephone.svg" alt="Celular"
-                                        title="Link a nuestro numero telefonico">
-                                    <span>Telefono</span>
+                                    <img  src="./assets/images/telephone.svg" alt="Celular"
+                                        title="Link a nuestro numero telefonico" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Telefono</span>
                                 </a>
                             </div>
                             <div class="bg-icon">
                                 <a href="https://wa.me/5493515057082?text=Hola!%20Mi%20nombre%20es%20:%20.%20.%20.%20Vengo%20de%20la%20página%20web%20me%20gustaría%20saber%20más%20sobre%20:"
                                     target="_blank">
                                     <img src="./assets/images/whatsapp.svg" alt="WhatsApp"
-                                        title="Link a nuestro WhatsApp">
-                                    <span>WhatsApp</span>
+                                        title="Link a nuestro WhatsApp" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">WhatsApp</span>
                                 </a>
                             </div>
                             <div class="bg-icon">
                                 <a href="mailto:sjat923@gmail.com" target="_blank">
-                                    <img src="./assets/images/gmail.svg" alt="G-Mail" title="Link a nuestro e-mail">
-                                    <span>G-Mail</span>
+                                    <img src="./assets/images/gmail.svg" alt="G-Mail" title="Link a nuestro e-mail" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">G-Mail</span>
                                 </a>
                             </div>
                             <div class="bg-icon">
                                 <a href="https://www.instagram.com/sja.despachante/" target="_blank">
                                     <img src="./assets/images/instagram.svg" alt="Instagram"
-                                        title="Link a nuestro Instagram">
-                                    <span>Instagram</span>
+                                        title="Link a nuestro Instagram" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                                    <span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Instagram</span>
                                 </a>
                             </div>
                         </div>
@@ -472,6 +493,8 @@
     <!-- SCRIPT -->
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
