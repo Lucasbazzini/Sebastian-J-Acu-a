@@ -9,9 +9,4 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
-
-
-window.addEventListener('load', function() {
-    document.querySelector('#spinner').style.display = 'none';
-  });
-  
+ 

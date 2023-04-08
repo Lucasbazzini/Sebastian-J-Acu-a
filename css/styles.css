@@ -20,17 +20,20 @@
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
 
-body {
+body{
     overflow-x: hidden;
 }
 
+
 header {
+    overflow-x: hidden;
     z-index: 9999;
     top: 0;
     position: sticky;
@@ -41,35 +44,7 @@ header {
     background-color: rgb(243, 243, 243);
 }
 
-.loader-pulse {
 
-    position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999999;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: #4444fd;
-    animation: load-pulse 1.2s infinite linear;
-  }
-
-  @keyframes load-pulse {
-    0% {
-      transform: scale(0.15);
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
 
 .logo {
     width: 64.18px;
