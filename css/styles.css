@@ -295,14 +295,14 @@ header {
     overflow: hidden;
 }
 
-.slider-frame ul{
+.slider-frame-ul{
     display: flex;
     padding: 0;
     width: 200%;
     animation: slide 8s infinite ease-in-out;
 }
 
-.slider-frame li{
+.slider-frame-li{
     list-style: none;
     width: 100%;
     display: flex;
@@ -310,7 +310,7 @@ header {
     justify-content: center;
 }
 
-.slider-frame img{
+.slider-frame-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1031,7 +1031,6 @@ footer{
     }
 
     .container_nosotros img {
-        /* content: url('../assets/images/sebas_s.webp'); */
         width: 80vw;
         min-height: 200px;
         object-fit: cover;
